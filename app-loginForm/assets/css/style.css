@@ -20,9 +20,52 @@ body {
   height: 100vh;
 }
 
-.login{
+.login {
   width: 300px;
   height: 300px;
   background-color: #fff;
   box-shadow: 1px 1px 14px 3px #bdb4b4;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 250px;
+}
+
+.login form input {
+  width: 80%;
+  height: 40px;
+  border: none;
+  /* outline: none; */
+}
+
+.login input[type="text"] {
+  margin-top: 36px;
+}
+
+.login input:not([type="button"]) {
+  background-color: rgb(231, 217, 217);
+  padding-right: 5px;
+}
+
+.login input:nth-child(3) {
+  background-color: rgb(61, 148, 20);
+  color: #fff;
+}
+.login input:nth-child(3):hover {
+  background-color: rgb(48, 97, 25);
+}
+
+.login div {
+  text-align: center;
+}
+.login div a {
+  color: rgb(61, 148, 20);
+  text-decoration: none;
+}
+.login div a:hover {
+  text-decoration: underline;
 }
